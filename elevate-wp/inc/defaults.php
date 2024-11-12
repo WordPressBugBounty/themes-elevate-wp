@@ -166,9 +166,9 @@ $elevate_wp_gradients = array(
 		),
 
 );
-$elevate_wp_theme_action_button = __( 'Action Button %d', 'elevate-wp' );
+$elevate_wp_theme_action_button =  'Action Button %d';
 
-$elevate_wp_theme_click_pen_to_edit_title = __( 'Click the pencil icon to edit the text', 'elevate-wp' );
+$elevate_wp_theme_click_pen_to_edit_title =  'Click the pencil icon to edit the text';
 $elevate_wp_lorem_ipsum                   = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimnad minim veniam, quis nostrud exercitation ullamco laboris nisi.';
 
 

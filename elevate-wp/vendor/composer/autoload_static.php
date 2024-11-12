@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit8bc9e21920332339f13727b3993497ad
+class ComposerStaticInitc565c2792e62aab74a4d0c6b629e9ba3
 {
     public static $files = array (
         'f40eb6b6e72038beec37d8a0baa6e2f0' => __DIR__ . '/../..' . '/inc/template-functions.php',
@@ -165,9 +165,9 @@ class ComposerStaticInit8bc9e21920332339f13727b3993497ad
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit8bc9e21920332339f13727b3993497ad::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit8bc9e21920332339f13727b3993497ad::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit8bc9e21920332339f13727b3993497ad::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitc565c2792e62aab74a4d0c6b629e9ba3::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitc565c2792e62aab74a4d0c6b629e9ba3::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitc565c2792e62aab74a4d0c6b629e9ba3::$classMap;
 
         }, null, ClassLoader::class);
     }

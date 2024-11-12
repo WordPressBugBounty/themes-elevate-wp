@@ -126,14 +126,16 @@ elevate_wp_theme()
 			'width'       => 150,
 			'height'      => 70,
 		)
-	)
-	->register_menus(
-		array(
-			'header-menu' => esc_html__( 'Header Menu', 'elevate-wp' ),
-			'footer-menu' => esc_html__( 'Footer Menu', 'elevate-wp' ),
-		)
 	);
 
+add_action('after_setup_theme', function() {
+    elevate_wp_theme()->register_menus(
+        array(
+            'header-menu' => esc_html__( 'Header Menu', 'elevate-wp' ),
+            'footer-menu' => esc_html__( 'Footer Menu', 'elevate-wp' ),
+        )
+    );
+}, 1);
 if ( ! apply_filters( 'kubio_is_enabled', false ) ) {
 	elevate_wp_assets()
 		->registerTemplateScript(

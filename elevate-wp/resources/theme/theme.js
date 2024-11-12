@@ -1022,8 +1022,11 @@ window.Colibri = _kubio_scripts_src_base__WEBPACK_IMPORTED_MODULE_0__.ColibriFro
       document.querySelector('html > body').appendChild(overlayElement);
     },
     preventDefault: function preventDefault(event) {
-      event.preventDefault();
-      event.stopPropagation();
+      try {
+        event.preventDefault();
+        event.stopPropagation();
+      } catch (e) {}
+
       return false;
     },
     addOffcanvasOverlayLogic: function addOffcanvasOverlayLogic() {
