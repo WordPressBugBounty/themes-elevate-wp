@@ -270,7 +270,7 @@ add_action(
 	function () {
 		if ( isset( $_GET['kubio-designed-imported'] ) && intval( $_GET['kubio-designed-imported'] ) ) :?>
 			<div class="kubio-admin-page-page-section kubio-get-started-section-1 wrap">
-				<div class="kubio-admin-row get-started-imported notice notice-success">
+				<div class="kubio-admin-row get-started-imported kubio-notice notice notice-success">
 					<div>
 						<p class="imported-title">
 							<?php
@@ -323,3 +323,4 @@ function elevate_wp_render_header_style() {
     elevate_wp_theme()->get('css')->render();
 }
 add_action('wp_head', 'elevate_wp_render_header_style', 100);
+require_once __DIR__ . '/inc/siteleads-integration/index.php';
